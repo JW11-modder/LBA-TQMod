@@ -1,0 +1,359 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>LBAMod</RootNamespace>
+		<LangVersion>default</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>LBAMod</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp-firstpass">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Autodesk.Fbx">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Autodesk.Fbx.dll</HintPath>
+		</Reference>
+		<Reference Include="Cinemachine">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Cinemachine.dll</HintPath>
+		</Reference>
+		<Reference Include="com.playeveryware.eos-Editor.steam.utility">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\com.playeveryware.eos-Editor.steam.utility.dll</HintPath>
+		</Reference>
+		<Reference Include="com.playeveryware.eos.core">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\com.playeveryware.eos.core.dll</HintPath>
+		</Reference>
+		<Reference Include="com.rlabrecque.steamworks.net">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+		</Reference>
+		<Reference Include="FbxBuildTestAssets">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\FbxBuildTestAssets.dll</HintPath>
+		</Reference>
+		<Reference Include="FileAccess_Standalone">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\FileAccess_Standalone.dll</HintPath>
+		</Reference>
+		<Reference Include="FMODUnity">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\FMODUnity.dll</HintPath>
+		</Reference>
+		<Reference Include="FMODUnityResonance">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\FMODUnityResonance.dll</HintPath>
+		</Reference>
+		<Reference Include="LMirman.RewiredGlyphs">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\LMirman.RewiredGlyphs.dll</HintPath>
+		</Reference>
+		<Reference Include="PlayFab">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\PlayFab.dll</HintPath>
+		</Reference>
+		<Reference Include="Rewired_Core">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Rewired_Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Rewired_Windows">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Rewired_Windows.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.AI.Navigation">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.AI.Navigation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.Burst.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Formats.Fbx.Runtime">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.Formats.Fbx.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.InputSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem.ForUI">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.InputSystem.ForUI.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.Csg">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.ProBuilder.Csg.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.ProBuilder.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.KdTree">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.ProBuilder.KdTree.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.Poly2Tri">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.Stl">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.ProBuilder.Stl.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Runtime">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Shaders">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Splines">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.Splines.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ARModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterInputModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterRendererModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ContentLoadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.GIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.NVIDIAModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.NVIDIAModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.PropertiesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VirtualTexturingModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>$(GamePath)/LittleBigAdventureTwinsensQuest_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>$(GamePath)/MelonLoader\net35\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(GamePath)/MelonLoader\net35\0Harmony.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Core.cs" />
+		<Compile Include="JMod_melon.cs" />
+		<Content Include="Directory.Build.props" />
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;$(GamePath)/Mods&quot;" />
+	</Target>
+</Project>
